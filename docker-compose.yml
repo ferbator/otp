@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  postgresql:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: "otp_db"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
